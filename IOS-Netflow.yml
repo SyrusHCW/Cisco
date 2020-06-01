@@ -21,7 +21,7 @@
           - collect routing source as 
           - collect routing destination as 
           - flow exporter NTAExporter
-          - destination 192.168.1.
+          - destination 192.168.1.8
           - source g0
           - transport udp 2055
           - export-protocol netflow-v9
