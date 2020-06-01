@@ -1,0 +1,12 @@
+---
+- hosts: '{{ host }}'
+  connection: local
+ 
+  
+  tasks:
+    - name: Configure SNMP
+      ios_config:
+        lines:
+          - snmp-server view viewRO iso included
+          - snmp-server group TEST v3 priv read viewRO
+          - snmp-server user SW-TEST-RO TEST v3 auth sha password priv aes 128 password
