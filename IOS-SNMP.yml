@@ -7,4 +7,6 @@
     - name: Configure SNMP
       ios_config:
         lines:
-          - default int default interface gigabitEthernet0/0/0
+          - snmp-server view viewRO iso included
+          - snmp-server group TEST v3 priv read viewRO
+          - snmp-server user SW-TEST-RO TEST v3 auth sha password priv aes 128 password
