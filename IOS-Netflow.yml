@@ -21,8 +21,8 @@
           - collect routing source as 
           - collect routing destination as 
           - flow exporter NTAExporter
-          - destination 192.168.1.8
-          - source g0
+          - destination 192.168.1.229
+          - source lo0
           - transport udp 2055
           - export-protocol netflow-v9
           - template data timeout 60
